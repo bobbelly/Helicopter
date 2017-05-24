@@ -4,7 +4,7 @@
     <Files>
       <File FileName="Assets\Scripts\QuadController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\QuadForceController.cs" Line="32" Column="3" />
+      <File FileName="Assets\Scripts\QuadForceController.cs" Line="8" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

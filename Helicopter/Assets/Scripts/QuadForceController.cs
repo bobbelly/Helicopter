@@ -26,10 +26,13 @@ public class QuadForceController : MonoBehaviour {
 		float moveHorizontalY = Input.GetAxis ("HorizontalY");
 		float moveVertical = Input.GetAxis ("Throttle");
 
-		rb.AddRelativeForce (Vector3.right * moveVertical * speed, ForceMode.VelocityChange);
+		rb.AddRelativeForce (Vector3.right * moveVertical * speed, ForceMode.Force);
 
-		rb.AddRelativeTorque (Vector3.up * moveHorizontalX * torque, ForceMode.VelocityChange);
-		rb.AddRelativeTorque (Vector3.forward * moveHorizontalY * torque, ForceMode.VelocityChange);
+		rb.AddRelativeTorque (Vector3.up * moveHorizontalX * torque, ForceMode.Force);
+		rb.AddRelativeTorque (Vector3.forward * moveHorizontalY * torque, ForceMode.Force);
+
+		print ("x: " + moveHorizontalX);
+		print ("y: " + moveHorizontalY);
 
 		Vector3 rotateYaw = new Vector3(Input.GetAxis ("Yaw"),0f, 0f);
 		rotateYaw *= rotateSpeed;
